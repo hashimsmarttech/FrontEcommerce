@@ -24,7 +24,7 @@ const Header = ({ isAuth }) => {
       className="lg-body-tertiary"
     >
       <Container fluid>
-        <Navbar.Brand>Let's Negotiates</Navbar.Brand>
+        <Navbar.Brand><Link to="/">Smart Ecommerce</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

@@ -145,12 +145,12 @@ const Payment = () => {
               >
                 <Image src={`${server}/${e.product.image}`} alt="" width={60} />
                 <p>{e.product.title}</p>
-                <p>₹{e.product.price}</p>
+                <p>Rs{e.product.price}</p>
                 <p>Quantity - {e.quantity}</p>
               </div>
             ))}
 
-          <div className="mt-3"> total price to be paid - ₹{subTotal}</div>
+          <div className="mt-3"> total price to be paid - Rs{subTotal}</div>
 
           {address && (
             <div>
@@ -163,7 +163,7 @@ const Payment = () => {
           <select value={method} onChange={(e) => setMethod(e.target.value)}>
             <option>Choose Payment Method</option>
             <option value="cod">Cod</option>
-            <option value="online">Online</option>
+            {/* <option value="online">Online</option> */}
           </select>
           <br />
           <Button

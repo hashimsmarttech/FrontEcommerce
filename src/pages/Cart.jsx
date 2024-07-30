@@ -35,7 +35,7 @@ const Cart = () => {
                 <tr key={i}>
                   <th>{i + 1}</th>
                   <th>{e.product.title}</th>
-                  <th>₹{e.product.price}</th>
+                  <th>Rs{e.product.price}</th>
 
                   <td>
                     <Link to={`/product/${e.product._id}`}>
@@ -61,7 +61,7 @@ const Cart = () => {
                       +
                     </Button>
                   </td>
-                  <td>₹{e.product.price * e.quantity}</td>
+                  <td>Rs{e.product.price * e.quantity}</td>
                   <td>
                     <Button
                       variant="danger"
@@ -84,7 +84,7 @@ const Cart = () => {
       ) : (
         <div className="bottom">
           <h2>Subtotal</h2>
-          <p>total price to be Paid - ₹ {subTotal}</p>
+          <p>total price to be Paid - Rs {subTotal}</p>
           <Button
             style={{
               display: "flex",

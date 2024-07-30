@@ -65,7 +65,7 @@ const ProductDetails = () => {
             <h2>{product.title}</h2>
             <p>{product.description}</p>
             <p>category - {product.category}</p>
-            <p>Price - ₹ {product.price}</p>
+            <p>Price - Rs {product.price}</p>
             {user.role === "admin" && <p>stock - {product.stock}</p>}
             {user.role === "admin" && (
               <>

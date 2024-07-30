@@ -55,7 +55,7 @@ const AdminOrders = () => {
   );
   return (
     <div>
-      <h4>Total Revenue - ₹{totalSubtotal}</h4>
+      <h4>Total Revenue - Rs{totalSubtotal}</h4>
       {orders && orders.length > 0 ? (
         <Table striped bordered responsive hover size="sm">
           <thead>

@@ -6,6 +6,7 @@ import { server } from "../main";
 
 const OrderPage = () => {
   const [order, setOrder] = useState([]);
+  
   const params = useParams();
   async function fetchOrder() {
     try {
@@ -53,7 +54,7 @@ const OrderPage = () => {
                   <tr key={i}>
                     <td>{i + 1}</td>
                     <td>{e.product.title}</td>
-                    <td>₹{e.product.price}</td>
+                    <td>Rs{e.product.price}</td>
                     <td>
                       <Link to={`/product/${e.product._id}`}>
                         <img
@@ -64,14 +65,14 @@ const OrderPage = () => {
                       </Link>
                     </td>
                     <td>{e.quantity}</td>
-                    <td>₹ {e.product.price * e.quantity}</td>
+                    <td>Rs {e.product.price * e.quantity}</td>
                   </tr>
                 ))}
             </tbody>
           </Table>
 
           <h5 className="text-center my-2 text-primary">
-            Subtotal - ₹{order.subTotal}
+            Subtotal - Rs{order.subTotal}
           </h5>
           <h5 className="text-center my-2 text-primary">
             Payment Method - {order.method}

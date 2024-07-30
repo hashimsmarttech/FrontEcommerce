@@ -66,7 +66,7 @@ export const UserContextProvider = ({ children }) => {
       }
     } catch (error) {
       toast.error(error.response.data.message);
-    }
+    } 
   }
 
   async function fetchUser() {

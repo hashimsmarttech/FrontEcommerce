@@ -66,11 +66,11 @@ const Products = () => {
             className="mt-3"
             style={{ width: "200px" }}
             min={0}
-            max={7000}
+            max={200000}
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
-          <p>Minimum Price - ₹ {price}</p>
+          <p>Minimum Price - Rs {price}</p>
         </div>
       </div>
 

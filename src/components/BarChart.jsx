@@ -34,7 +34,7 @@ const BarChart = ({ sold, title }) => {
     indexAxis: "x",
     plugins: {
       legend: {
-        display: false,
+        display: true,
       },
       title: {
         display: true,
@@ -43,14 +43,14 @@ const BarChart = ({ sold, title }) => {
 
     scales: {
       y: {
-        beginAtZero: true,
+        beginAtZero: false,
         grid: {
-          display: false,
+          display: true,
         },
       },
       x: {
         grid: {
-          display: false,
+          display: true,
         },
       },
     },
@@ -66,7 +66,7 @@ const BarChart = ({ sold, title }) => {
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
         barThickness: "flex",
-        barPercentage: 1,
+        barPercentage: 0.8,
         categoryPercentage: 0.4,
       },
     ],

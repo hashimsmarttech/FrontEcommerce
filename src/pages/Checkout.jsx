@@ -152,8 +152,8 @@ const AddressModal = ({
             <Form.Control
               type="number"
               placeholder="Enter Phone"
-              minLength={10}
-              maxLength={10}
+              minLength={11}
+              maxLength={11}
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
